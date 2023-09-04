@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="game.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.glitch.global/8de20822-3976-42f9-9658-106840e8f3b1/favicon.png?v=1692675304668" rel="icon" type="image/x-icon">
+
+    <script src="game.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+  <div id="progress">
+    <p>XOXOXOXOXOXO</p>
+    <h1>
+      Searching for an opponent...
+    </h1>
+    <p>XOXOXOXOXOXO</p>
+  </div>
+    <main>
+        <div id = "info">
+          <h2 id="turn"></h2>
+          <h2 id="room"></h2>
+        </div>
+        <div class="row">
+            <button class="box" >_</button>
+            <div class ="v_line"></div>
+            <button class="box" >_</button>
+            <div class ="v_line"></div>
+            <button class="box" >_</button>
+        </div>
+      
+      <div class ="h_line"></div>
+
+        <div class="row">
+            <button class="box" >_</button>
+            <div class ="v_line2"></div>
+            <button class="box" >_</button>
+            <div class ="v_line2"></div>
+            <button class="box" >_</button>
+        </div>
+      
+      <div class ="h_line"></div>
+
+        <div class="row">
+            <button class="box" >_</button>
+            <div class="v_line3"></div>
+            <button class="box" >_</button>
+            <div class ="v_line3"></div>
+            <button class="box" >_</button>
+        </div>
+      
+      <div id="bottom">
+      
+        <button class="button" id="again" onclick="anotherRound()">Play Again!</button>
+        <button class="button" id="quit" onclick="quit()">Quit</button>
+      </div>
+    </main>
+<!--     <footer>
+    <p>XOXOXOXOXOXO</p>
+    </footer> -->
+</body>
+</html>

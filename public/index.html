@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.glitch.global/8de20822-3976-42f9-9658-106840e8f3b1/favicon.png?v=1692675304668" rel="icon" type="image/x-icon">
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main>
+    
+      <aside>
+        <p>XOXOXOXOXOXOXOXOXOXOXOXOXOXO</p>
+      </aside>
+       <section>
+          <button onclick="findGame()">Find Game</button>
+      </section> 
+      
+    </main>
+  <footer>
+    <p class="online">
+      people are playing right now.
+    </p>
+    <p class="online">
+      people are playing right now.
+    </p>
+    <p class="online">
+      people are playing right now.
+    </p>
+  </footer>
+    
+</body>
+<script>
+
+    activeSessions();
+    async function activeSessions(){
+      let result = 0;
+      const response  = await fetch(`https://restfulpro3.glitch.me/clients`);
+      result = await response.text();
+      let online = document.querySelectorAll(".online");
+      online.forEach(function(p){
+        p.innerText = `${result} people are playing right now.`;
+      })
+      
+    }
+
+    function findGame(){
+        console.log("working");
+        window.location.href = "https://restfulpro3.glitch.me/game";
+    }
+</script>
+</html>
