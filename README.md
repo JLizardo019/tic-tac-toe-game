@@ -7,6 +7,13 @@ A online multiplayer tic-tac-toe game server!
 ## Summary
 A multiplayer game server that allows users to play tic-tac-toe with anyone online anonymously. It is built to support over 3 million simultaneous online game rooms. The personal goal of the project is to explore web sockets and backend development with APIs.
 
+## Installation
+1. Install a package manager like npm, yarn, brew. I use [npm](https://www.npmjs.com/) Note: npm is the standard package management system for Javascript based projects.
+2. Navigate to your project directory in the terminal.
+3. Run the command <code>npm install</code> to install project dependencies.
+4. Run <code>npm start</code> to run a local development server.
+5. Visit [http://localhost:3000](http://localhost:3000/) to view live site.
+
 ## Process
 The architecture of this project entails a server that communicates with multiple clients and saves the game state of each room in a database. For simplicity sake and to focus mainly on the API development, the multiplayer game will be Tic Tac Toe with only 2 players per room. I will be using a json file as the database, but eventually will expand to use other database infrastructure such as SQL. I am building an [express](https://href.li/?https://www.npmjs.com/package/express) server with Node.js and [express-ws](https://href.li/?https://www.npmjs.com/package/express-ws).
 
